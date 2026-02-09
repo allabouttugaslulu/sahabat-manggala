@@ -264,4 +264,18 @@ body {
   color: #ffffff;
 }
 
+/* ===== FIX HEADER AGAR TIDAK BERUBAH ===== */
+
+.headline-wrap {
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
