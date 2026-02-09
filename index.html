@@ -9,45 +9,68 @@
 
 <body>
 
+<section class="hero">
+  <h1>Sahabat Manggala</h1>
+  <p>
+    Program dukungan psikososial yang diinisiasi oleh Biro Kesejahteraan Mahasiswa
+    sebagai ruang aman untuk berbagi, didengar, dan didampingi.
+  </p>
+</section>
+
 <section class="services">
-  <h2 class="section-title">Layanan Kami</h2>
+  <h2 class="section-title">Kategori Layanan</h2>
 
   <div class="service-grid">
 
-    <!-- CARD 1 -->
+    <!-- CURHAT ANONIM -->
     <div class="service-card fade-up">
       <div class="icon">🤍</div>
       <h3>Curhat Anonim</h3>
+      <p class="desc">
+        Ruang aman untuk berbagi cerita secara anonim dengan kerahasiaan terjaga.
+      </p>
 
-      <button class="btn-outline" onclick="openModal('curhat')">
+      <button class="btn outline" onclick="openModal('anonim')">
         Cara Mendaftar
       </button>
 
-      <a href="#" class="btn-primary">Pendaftaran</a>
+      <a href="https://tally.so/r/2ENKxj" target="_blank" class="btn primary">
+        Pendaftaran
+      </a>
     </div>
 
-    <!-- CARD 2 -->
+    <!-- PEER COUNSELOR -->
     <div class="service-card fade-up">
       <div class="icon">🤝</div>
       <h3>Peer Counselor</h3>
+      <p class="desc">
+        Pendampingan oleh teman sebaya terlatih yang siap mendengarkan dan menemani.
+      </p>
 
-      <button class="btn-outline" onclick="openModal('peer')">
+      <button class="btn outline" onclick="openModal('peer')">
         Cara Mendaftar
       </button>
 
-      <a href="#" class="btn-primary">Pendaftaran</a>
+      <a href="https://tally.so/r/rjAoGl" target="_blank" class="btn primary">
+        Pendaftaran
+      </a>
     </div>
 
-    <!-- CARD 3 -->
+    <!-- KONSELING PROFESIONAL -->
     <div class="service-card fade-up">
       <div class="icon">🧠</div>
       <h3>Konseling Profesional</h3>
+      <p class="desc">
+        Rujukan konseling dengan tenaga profesional bekerja sama dengan UPK.
+      </p>
 
-      <button class="btn-outline" onclick="openModal('pro')">
+      <button class="btn outline" onclick="openModal('pro')">
         Cara Mendaftar
       </button>
 
-      <a href="#" class="btn-primary">Pendaftaran</a>
+      <a href="https://tally.so/r/VL5zvv" target="_blank" class="btn primary">
+        Pendaftaran
+      </a>
     </div>
 
   </div>
@@ -56,11 +79,23 @@
 <!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="close" onclick="closeModal()">×</span>
     <h3 id="modal-title"></h3>
     <p id="modal-desc"></p>
+    <a id="modal-wa" class="wa-btn" target="_blank">Hubungi CP</a>
   </div>
 </div>
+
+<footer class="footer">
+  <p class="footer-title">Sahabat Manggala</p>
+  <p>
+    Biro Kesejahteraan Mahasiswa – Departemen PSDM<br>
+    Badan Angkatan Manggala
+  </p>
+  <p class="footer-note">
+    Kamu tidak sendirian. Mencari bantuan adalah langkah yang berani.
+  </p>
+</footer>
 
 <script src="script.js"></script>
 </body>
