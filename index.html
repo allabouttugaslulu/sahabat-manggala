@@ -2,63 +2,66 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sahabat Manggala</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <h1>Sahabat Manggala</h1>
-  <p>Ruang aman untuk saling mendengar, mendampingi, dan menguatkan 🤍</p>
-</header>
-
-<section class="about">
-  <p>
-    Sahabat Manggala merupakan program dukungan psikososial yang diinisiasi oleh
-    Biro Kesejahteraan Mahasiswa sebagai bentuk kepedulian terhadap kesehatan mental
-    mahasiswa Generasi Manggala.
-  </p>
-</section>
-
 <section class="services">
-  <h2>Layanan Kami</h2>
+  <h2 class="section-title">Layanan Kami</h2>
 
-  <div class="services-grid">
-    <div class="card fade-in">
-      <div class="icon">🫶</div>
+  <div class="service-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-card fade-up">
+      <div class="icon">🤍</div>
       <h3>Curhat Anonim</h3>
-      <button onclick="openModal('anonim')">Cara Mendaftar</button>
-      <a href="https://tally.so/r/2ENKxj" target="_blank">Pendaftaran</a>
+
+      <button class="btn-outline" onclick="openModal('curhat')">
+        Cara Mendaftar
+      </button>
+
+      <a href="#" class="btn-primary">Pendaftaran</a>
     </div>
 
-    <div class="card fade-in">
+    <!-- CARD 2 -->
+    <div class="service-card fade-up">
       <div class="icon">🤝</div>
       <h3>Peer Counselor</h3>
-      <button onclick="openModal('peer')">Cara Mendaftar</button>
-      <a href="https://tally.so/r/rjAoGl" target="_blank">Pendaftaran</a>
+
+      <button class="btn-outline" onclick="openModal('peer')">
+        Cara Mendaftar
+      </button>
+
+      <a href="#" class="btn-primary">Pendaftaran</a>
     </div>
 
-    <div class="card fade-in">
+    <!-- CARD 3 -->
+    <div class="service-card fade-up">
       <div class="icon">🧠</div>
       <h3>Konseling Profesional</h3>
-      <button onclick="openModal('pro')">Cara Mendaftar</button>
-      <a href="https://tally.so/r/VL5Zvv" target="_blank">Pendaftaran</a>
+
+      <button class="btn-outline" onclick="openModal('pro')">
+        Cara Mendaftar
+      </button>
+
+      <a href="#" class="btn-primary">Pendaftaran</a>
     </div>
+
   </div>
 </section>
 
 <!-- MODAL -->
-<div id="modal" class="modal">
+<div class="modal" id="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <div id="modal-text"></div>
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
   </div>
 </div>
 
-<footer>
-  <p>
-    Sahabat Manggala • Biro Kesejahteraan Mahasiswa • Departemen PSDM<br />
-    Badan Angkatan Manggala
-  </p>
-  <s
+<script src="script.js"></script>
+</body>
+</html>
