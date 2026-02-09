@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sahabat Manggala</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<script src="script.js"></script>
+
 <body>
 
 <header>
@@ -24,47 +24,41 @@
 <section class="services">
   <h2>Layanan Kami</h2>
 
-  <div class="card">
-    <h3>Curhat Anonim</h3>
-    <button onclick="openModal('anonim')">Cara Mendaftar</button>
-    <a href="https://tally.so/r/2ENKxj" target="_blank">Pendaftaran</a>
-  </div>
+  <div class="services-grid">
+    <div class="card fade-in">
+      <div class="icon">🫶</div>
+      <h3>Curhat Anonim</h3>
+      <button onclick="openModal('anonim')">Cara Mendaftar</button>
+      <a href="https://tally.so/r/2ENKxj" target="_blank">Pendaftaran</a>
+    </div>
 
-  <div class="card">
-    <h3>Peer Counselor</h3>
-    <button onclick="openModal('peer')">Cara Mendaftar</button>
-    <a href="https://tally.so/r/rjAoGl" target="_blank">Pendaftaran</a>
-  </div>
+    <div class="card fade-in">
+      <div class="icon">🤝</div>
+      <h3>Peer Counselor</h3>
+      <button onclick="openModal('peer')">Cara Mendaftar</button>
+      <a href="https://tally.so/r/rjAoGl" target="_blank">Pendaftaran</a>
+    </div>
 
-  <div class="card">
-    <h3>Konseling Profesional</h3>
-    <button onclick="openModal('pro')">Cara Mendaftar</button>
-    <a href="https://tally.so/r/VL5zvv" target="_blank">Pendaftaran</a>
+    <div class="card fade-in">
+      <div class="icon">🧠</div>
+      <h3>Konseling Profesional</h3>
+      <button onclick="openModal('pro')">Cara Mendaftar</button>
+      <a href="https://tally.so/r/VL5Zvv" target="_blank">Pendaftaran</a>
+    </div>
   </div>
 </section>
 
 <!-- MODAL -->
 <div id="modal" class="modal">
   <div class="modal-content">
-    <span onclick="closeModal()" class="close">&times;</span>
+    <span class="close" onclick="closeModal()">&times;</span>
     <div id="modal-text"></div>
-    <a class="wa-btn" href="https://wa.me/6281318195588" target="_blank">
-      Hubungi CP (Lulu)
-    </a>
   </div>
 </div>
 
 <footer>
   <p>
-    Sahabat Manggala — Biro Kesejahteraan Mahasiswa  
-    <br>
-    Departemen PSDM Badan Angkatan Manggala  
-    <br><br>
-    <em>Kamu tidak sendirian. Tidak apa-apa untuk meminta bantuan.</em>
+    Sahabat Manggala • Biro Kesejahteraan Mahasiswa • Departemen PSDM<br />
+    Badan Angkatan Manggala
   </p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
-
+  <s
