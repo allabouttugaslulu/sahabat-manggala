@@ -1,12 +1,29 @@
 function openModal(type) {
-  const text = {
-    anonim: "Curhat Anonim dilakukan melalui formulir daring yang dijaga kerahasiaannya.",
-    peer: "Dukungan langsung dari peer counselor terlatih.",
-    pro: "Rujukan kepada psikolog dari UPK bagi kasus yang membutuhkan penanganan lebih lanjut."
-  };
+  const modal = document.getElementById("modal");
+  const text = document.getElementById("modal-text");
 
-  document.getElementById("modal-text").innerText = text[type];
-  document.getElementById("modal").style.display = "block";
+  if (type === "anonim") {
+    text.innerHTML = `
+      <h3>Curhat Anonim</h3>
+      <p>Kamu bisa bercerita secara anonim. Ceritamu akan didengar dengan empati dan dijaga kerahasiaannya.</p>
+    `;
+  }
+
+  if (type === "peer") {
+    text.innerHTML = `
+      <h3>Peer Counselor</h3>
+      <p>Kamu akan didampingi oleh sesama mahasiswa terlatih yang siap mendengarkan dan menemani.</p>
+    `;
+  }
+
+  if (type === "pro") {
+    text.innerHTML = `
+      <h3>Konseling Profesional</h3>
+      <p>Layanan konseling dengan tenaga profesional sesuai kebutuhanmu.</p>
+    `;
+  }
+
+  modal.style.display = "block";
 }
 
 function closeModal() {
