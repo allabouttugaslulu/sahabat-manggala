@@ -1,109 +1,77 @@
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f6f4ff;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  background: #f7f5ff;
   color: #333;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
-  background: linear-gradient(135deg, #e9d8ff, #fce7f3);
-  padding: 48px 20px;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e9d5ff, #fde2f3);
 }
 
 header h1 {
   font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 18px;
-  font-weight: 400;
-  opacity: 0.85;
 }
 
-/* ===== SECTION ===== */
-section {
-  padding: 56px 20px;
+/* ABOUT */
+.about {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 17px;
+  padding: 0 20px;
 }
 
-.about p {
-  max-width: 720px;
-  margin: auto;
-  font-size: 16px;
-  line-height: 1.7;
+/* SERVICES */
+.services {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-/* ===== LAYANAN ===== */
 .services h2 {
   font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
-  width: 320px;
-  margin: 0 auto;
   padding: 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 12px;
 }
 
 .card h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-/* ===== BUTTON ===== */
-.card button,
-.card a {
-  display: block;
+/* BUTTONS */
+button {
   width: 100%;
-  height: 48px;
-  line-height: 48px;
-  margin-top: 12px;
+  padding: 12px;
   border-radius: 12px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-/* Cara Mendaftar */
-.card button {
-  background: #ede9fe;
-  border: none;
-  color: #5b21b6;
-}
-
-.card button:hover {
-  background: #ddd6fe;
-  transform: translateY(-2px);
-}
-
-/* Pendaftaran */
-.card a {
-  background: #a78bfa;
-  color: white;
-  text-decoration: none;
-}
-
-.card a:hover {
-  background: #8b5cf6;
-  transform: translateY(-2px);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  font-size: 13px;
-  color: #666;
-  padding: 32px 16px;
-  line-height: 1.6;
-}
+  border:
