@@ -24,7 +24,7 @@ function openModal(type) {
   if (type === "pro") {
     title.innerText = "Cara Mendaftar Konseling Profesional";
     desc.innerText =
-      "Isi formulir, kemudian akan diarahkan untuk proses lanjutan dengan profesional. Hubungi CP untuk konfirmasi";
+      "Isi formulir, kemudian akan diarahkan untuk proses lanjutan dengan profesional. Hubungi CP untuk konfirmasi.";
     waBtn.style.display = "block";
     waBtn.href = "https://wa.me/6281318195588";
   }
@@ -42,4 +42,5 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
 
