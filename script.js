@@ -1,31 +1,44 @@
+const modal = document.getElementById("modal");
+const title = document.getElementById("modal-title");
+const desc = document.getElementById("modal-desc");
+const waBtn = document.getElementById("modal-wa");
+
 function openModal(type) {
-  const modal = document.getElementById("modal");
-  const text = document.getElementById("modal-text");
+  modal.style.display = "flex";
+  waBtn.style.display = "none";
 
   if (type === "anonim") {
-    text.innerHTML = `
-      <h3>Curhat Anonim</h3>
-      <p>Kamu bisa bercerita secara anonim. Ceritamu akan didengar dengan empati dan dijaga kerahasiaannya.</p>
-    `;
+    title.innerText = "Cara Mendaftar Curhat Anonim";
+    desc.innerText =
+      "Curhat dilakukan melalui formulir daring yang dijaga kerahasiaannya.";
   }
 
   if (type === "peer") {
-    text.innerHTML = `
-      <h3>Peer Counselor</h3>
-      <p>Kamu akan didampingi oleh sesama mahasiswa terlatih yang siap mendengarkan dan menemani.</p>
-    `;
+    title.innerText = "Cara Mendaftar Peer Counselor";
+    desc.innerText =
+      "Isi formulir pendaftaran, lalu kamu akan dihubungi oleh peer counselor.";
+    waBtn.style.display = "block";
+    waBtn.href = "https://wa.me/6281318195588";
   }
 
   if (type === "pro") {
-    text.innerHTML = `
-      <h3>Konseling Profesional</h3>
-      <p>Layanan konseling dengan tenaga profesional sesuai kebutuhanmu.</p>
-    `;
+    title.innerText = "Cara Mendaftar Konseling Profesional";
+    desc.innerText =
+      "Isi formulir, kemudian akan diarahkan untuk proses lanjutan dengan UPK.";
+    waBtn.style.display = "block";
+    waBtn.href = "https://wa.me/6281318195588";
   }
-
-  modal.style.display = "block";
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  modal.style.display = "none";
 }
+
+const cards = document.querySelectorAll(".fade-up");
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    if (card.getBoundingClientRect().top < window.innerHeight - 100) {
+      card.classList.add("show");
+    }
+  });
+});
