@@ -8,15 +8,15 @@ function openModal(type) {
   waBtn.style.display = "none";
 
   if (type === "anonim") {
-    title.innerText = "Cara Mendaftar Curhat Anonim";
+    title.innerText = "Deskripsi Layanan Curhat Anonim";
     desc.innerText =
       "Curhat dilakukan melalui formulir daring yang dijaga kerahasiaannya.";
   }
 
   if (type === "peer") {
-    title.innerText = "Cara Mendaftar Peer Counselor";
+    title.innerText = "Cara Mendaftar Layanan Peer Counselor";
     desc.innerText =
-      "Isi formulir pendaftaran, lalu kamu akan dihubungi oleh peer counselor.";
+      "Isi formulir pendaftaran, lalu kamu akan dihubungi oleh peer counselor. Hubungi CP untuk konfirmasi.";
     waBtn.style.display = "block";
     waBtn.href = "https://wa.me/6281318195588";
   }
@@ -24,7 +24,7 @@ function openModal(type) {
   if (type === "pro") {
     title.innerText = "Cara Mendaftar Konseling Profesional";
     desc.innerText =
-      "Isi formulir, kemudian akan diarahkan untuk proses lanjutan dengan UPK.";
+      "Isi formulir, kemudian akan diarahkan untuk proses lanjutan dengan profesional. Hubungi CP untuk konfirmasi";
     waBtn.style.display = "block";
     waBtn.href = "https://wa.me/6281318195588";
   }
@@ -42,3 +42,4 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
