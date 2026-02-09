@@ -1,38 +1,63 @@
+/* RESET & GLOBAL */
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  margin: 0;
   background: linear-gradient(180deg, #f7f3ff, #ffffff);
   color: #333;
 }
 
-.hero {
-  padding: 80px 20px;
+/* ================= HEADER ================= */
+.header {
+  background: linear-gradient(135deg, #3b2f6b, #5b4db3);
+  color: white;
+  padding: 90px 20px 80px;
   text-align: center;
+  animation: fadeHeader 0.8s ease;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  max-width: 600px;
+.header-content {
+  max-width: 720px;
   margin: auto;
-  color: #555;
 }
 
+.header h1 {
+  font-size: 44px;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+@keyframes fadeHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= SERVICES ================= */
 .services {
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .section-title {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  color: #2f2f2f;
 }
 
 .service-grid {
@@ -43,52 +68,74 @@ body {
   margin: auto;
 }
 
+/* ================= CARD ================= */
 .service-card {
-  background: #fff;
-  padding: 35px 25px;
-  border-radius: 24px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 38px 28px;
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
   text-align: center;
-  transition: transform .3s ease;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
 }
 
 .icon {
-  font-size: 42px;
-  margin-bottom: 12px;
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .desc {
   font-size: 14px;
   color: #555;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  line-height: 1.6;
 }
 
+/* ================= BUTTON ================= */
 .btn {
   display: block;
   width: 100%;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 14px;
+  border-radius: 14px;
   text-decoration: none;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   cursor: pointer;
+  font-size: 15px;
+  transition: all .25s ease;
 }
 
+/* tombol utama */
 .btn.primary {
   background: #b8a7ff;
   color: white;
 }
 
+.btn.primary:hover {
+  background: #a393ff;
+}
+
+/* tombol outline */
 .btn.outline {
   background: transparent;
   border: 2px solid #b8a7ff;
   color: #6b5cff;
 }
 
+.btn.outline:hover {
+  background: #f1eeff;
+}
+
+/* ================= MODAL ================= */
 .modal {
   display: none;
   position: fixed;
@@ -101,8 +148,8 @@ body {
 
 .modal-content {
   background: #fff;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 34px 30px;
+  border-radius: 22px;
   width: 90%;
   max-width: 420px;
   text-align: center;
@@ -110,9 +157,19 @@ body {
   animation: scaleIn .3s ease;
 }
 
+.modal-content h3 {
+  margin-bottom: 12px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
 .close {
   position: absolute;
-  top: 15px;
+  top: 16px;
   right: 18px;
   font-size: 22px;
   cursor: pointer;
@@ -120,20 +177,27 @@ body {
 
 .wa-btn {
   display: none;
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 18px;
+  padding: 12px;
   background: #25D366;
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 @keyframes scaleIn {
-  from {opacity:0; transform:scale(.9);}
-  to {opacity:1; transform:scale(1);}
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-/* Scroll animation */
+/* ================= SCROLL ANIMATION ================= */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
@@ -145,9 +209,10 @@ body {
   transform: translateY(0);
 }
 
+/* ================= FOOTER ================= */
 .footer {
-  margin-top: 80px;
-  padding: 30px 20px;
+  margin-top: 90px;
+  padding: 35px 20px;
   text-align: center;
   background: #f1eeff;
   font-size: 14px;
@@ -155,10 +220,26 @@ body {
 
 .footer-title {
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .footer-note {
   margin-top: 10px;
   font-style: italic;
   color: #6b5cff;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
 }
