@@ -78,12 +78,6 @@ body {
   cursor: pointer;
 }
 
-.btn.secondary {
-  background: #ede9ff;
-  color: #6b5cff;
-  border: none;
-}
-
 .btn.primary {
   background: #b8a7ff;
   color: white;
@@ -168,4 +162,3 @@ body {
   font-style: italic;
   color: #6b5cff;
 }
-
